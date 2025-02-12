@@ -1,5 +1,5 @@
 # Use a lightweight Python base image
-FROM python:3.9-slim
+FROM python:3.11
 
 # Set the working directory
 WORKDIR /app
@@ -17,4 +17,3 @@ EXPOSE 8090
 # Start FastAPI with Uvicorn in a lightweight way
 CMD ["uvicorn", "main:server", "--host", "0.0.0.0", "--port", "8090"]
 
-    
