@@ -1,0 +1,17 @@
+# Ignore virtual environments
+venv/
+.env/
+
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+venv/
+.idea/
+.DS_Store
+
+
+# Ignore VSCode and PyCharm settings
+.vscode/
