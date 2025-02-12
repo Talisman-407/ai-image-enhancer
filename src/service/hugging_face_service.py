@@ -1,10 +1,10 @@
-# from huggingface_hub import InferenceClient
+import os
+from huggingface_hub import InferenceClient
 
-# HF_TOKEN = "***REMOVED***"
+HUGGING_FACE_TOKEN = os.getenv("HUGGING_FACE_TOKEN")
 
-# client = InferenceClient(
-#     provider="",
-#     token=HF_TOKEN,
-#     model="prompthero/openjourney-v4",
-
-# )
+client = InferenceClient(
+    provider="hf-inference",
+    token=HUGGING_FACE_TOKEN,
+    model="prompthero/openjourney-v4",
+)
