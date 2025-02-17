@@ -15,5 +15,5 @@ COPY . .
 EXPOSE 8090
 
 # Start FastAPI with Uvicorn in a lightweight way
-CMD ["uvicorn", "main:server", "--host", "0.0.0.0", "--port", "8090"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8090"]
 
